@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+<style>
+
+/* 파티클 배경 */
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+top:0;
+left:0;
+z-index:-1;
+background:#0d1117;
+}
+
+/* 콘텐츠 위로 + 글씨 흰색 */
+
+section{
+position:relative;
+z-index:1;
+color:white;
+}
+
+</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Online Store Idea</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+<nav class="navbar navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">← Back</a>
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="container text-center my-5">
+
+<h1>Online Store Idea</h1>
+
+<p class="lead">
+드롭쉬핑 기반 온라인 스토어 구조를 연구한 프로젝트입니다.
+</p>
+
+<p>
+이 프로젝트에서는 글로벌 고객을 대상으로 제품을 판매하는
+온라인 쇼핑몰 구조를 분석했습니다.
+
+Shopify, DSers, AliExpress를 활용한 드롭쉬핑 구조를 이해하고
+자동 주문 시스템과 마케팅 전략을 실험했습니다.
+</p>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<script>
+
+particlesJS("particles-js", {
+particles: {
+number: { value: 80 },
+color: { value: "#ffffff" },
+shape: { type: "circle" },
+opacity: { value: 0.5 },
+size: { value: 3 },
+line_linked: {
+enable: true,
+distance: 150,
+color: "#ffffff",
+opacity: 0.4,
+width: 1
+},
+move: {
+enable: true,
+speed: 3
+}
+}
+});
+
+</script>
+
+</body>
+</html>
